@@ -15,7 +15,7 @@ import { DevService } from './data/services/dev.service';
     TypeOrmModule.forRootAsync({
       useClass: DevService,
       imports: [ConfigModule],
-    }),,
+    }),
     TarefaModule,
     CategoriaModule
   ],

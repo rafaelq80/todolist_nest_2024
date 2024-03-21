@@ -13,7 +13,7 @@ export class DevService implements TypeOrmOptionsFactory {
             port: 3306,
             username: 'root',
             password: 'root',
-            database: 'db_db_todolist',
+            database: 'db_todolist',
             entities: [Tarefa, Categoria],
             synchronize: true,
     };
