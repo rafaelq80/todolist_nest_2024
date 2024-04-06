@@ -1,6 +1,6 @@
 import { ApiProperty } from "@nestjs/swagger"
 import { IsNotEmpty, MaxLength } from "class-validator"
-import { Column, Entity, ManyToOne, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm"
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from "typeorm"
 import { Categoria } from "../../categoria/entities/categoria.entity"
 
 @Entity({name: "tb_tarefas"})
@@ -28,7 +28,6 @@ export class Tarefa {
     
     @Column()
     @ApiProperty() 
-    @UpdateDateColumn()
     data: Date
 
     @Column()
